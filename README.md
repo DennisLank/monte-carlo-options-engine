@@ -88,6 +88,12 @@ Planned visual outputs include:
 - convergence of Monte Carlo estimates
 - parameter sensitivity plots
 
+## Dashboard (Dash + Plotly)
+
+Interaktives Dashboard zur Preisberechnung und Konvergenzanalyse (Monte Carlo + Black-Scholes Benchmark).
+
+![Dashboard](assets/dashboard_v1.png)
+
 ---
 
 ## Project Structure
