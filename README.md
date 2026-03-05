@@ -2,43 +2,54 @@
 
 A modular quantitative finance project for pricing European options with Monte Carlo simulation and Black-Scholes as an analytical benchmark.
 
-The goal of this repository is to build a clean, testable and extensible Python-based pricing engine that combines numerical simulation, analytical pricing and interactive visualization.
+This repository is being built as a clean, testable and extensible Python project focused on numerical option pricing, model transparency and interactive visualization.
 
 ---
 
 ## Project Status
 
-This project is currently in its early development phase.
+This project is currently in early development.
 
-At this stage, the repository has been set up with a modular structure to separate pricing logic, utilities, application code and tests from the beginning.
-
-The implementation is being developed step by step with a focus on:
+The repository structure is in place and the initial pricing layer is being implemented step by step with a focus on:
 
 - correctness
 - clear architecture
 - reproducibility
 - maintainability
 
+### Implemented so far
+
+- project structure and initial setup
+- Black-Scholes pricing module for European options
+- first unit tests for pricing logic and edge cases
+
+### Next steps
+
+- Monte Carlo pricing under geometric Brownian motion
+- pricing comparison between Monte Carlo and Black-Scholes
+- confidence intervals and convergence analysis
+- interactive frontend for visualization
+
 ---
 
 ## Project Goal
 
-The purpose of this project is to create a structured options pricing engine that can be extended over time.
+The purpose of this project is to build a structured options pricing engine that can be extended over time.
 
-Instead of building a one-off script or notebook, the project is intended to demonstrate:
+Rather than a one-off script or notebook, the repository is intended to demonstrate:
 
 - analytical pricing with Black-Scholes
 - Monte Carlo simulation for European options
 - transparent comparison between analytical and simulated prices
 - clean Python backend design
+- testable quantitative logic
 - interactive financial visualizations
-- test-driven quantitative development
 
 ---
 
 ## Planned Core Functionality
 
-The initial development scope includes:
+The initial scope includes:
 
 - Black-Scholes pricing for European call and put options
 - Monte Carlo pricing under geometric Brownian motion
@@ -56,11 +67,11 @@ Planned future extensions include:
 
 ---
 
-## Frontend Concept
+## Frontend
 
 A Dash-based frontend is planned to make the pricing logic and simulation behavior easy to explore and understand.
 
-The interface is intended to provide interactive inputs for:
+Planned inputs include:
 
 - spot price
 - strike price
@@ -83,8 +94,6 @@ Planned visual outputs include:
 
 The repository is organized with a modular layout to keep pricing logic, frontend code and testing clearly separated.
 
-Current structure:
-
     monte-carlo-options-engine/
     ├─ README.md
     ├─ requirements.txt
@@ -102,16 +111,15 @@ This structure is intended to support clean separation of concerns from the begi
 
 ## Technology Stack
 
-The project is planned around the following Python stack:
-
+### Current
 - Python
 - NumPy
 - SciPy
-- Plotly
-- Dash
 - pytest
 
-These tools were chosen to support numerical accuracy, interactive visualization and maintainable code design.
+### Planned for the interactive layer
+- Plotly
+- Dash
 
 ---
 
@@ -135,15 +143,15 @@ Key principles include:
 ### Phase 1
 - set up repository structure
 - implement Black-Scholes pricing
-- implement Monte Carlo pricing for European options
 - add first unit tests
 
 ### Phase 2
-- build the Dash frontend
-- add convergence and distribution visualizations
+- implement Monte Carlo pricing for European options
+- add convergence and distribution analysis
 - improve validation and error handling
 
 ### Phase 3
+- build the Dash frontend
 - add Greeks
 - add implied volatility
 - implement variance reduction techniques
